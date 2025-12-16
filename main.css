@@ -15,16 +15,21 @@ html,body{
     background: #ffffff;
     color: #ADDC2E;
 }
-
 @font-face {
-    font-family:gilroy ;
-    src: url(./fonts/Gilroy-Medium.ttf);
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: monserrat ;
-    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
 }
+
+
 #nav{
     height: 16vh;
     width: 100%;
@@ -111,7 +116,8 @@ video{
     position: relative;
     font-weight: 900;
     z-index: 10;
-    font-family: monserrat ;
+      font-family: "Montserrat";
+
 
 
     
@@ -123,7 +129,8 @@ video{
     text-transform: uppercase;
     position: relative;
     margin-top: 2vh;
-    font-family: monserrat ;
+      font-family: "Montserrat";
+
 
 }
 #page1 h1::before{
@@ -134,7 +141,8 @@ video{
     left: -.5%;
     -webkit-text-stroke: 2px #ADDC2E;
     z-index: -1;
-    font-family: monserrat ;
+      font-family: "Montserrat";
+
 
 }
 
@@ -142,7 +150,8 @@ video{
     width: 41%;
     margin-top: 2vh;
     font-size: 2.5vh;
-    font-family: monserrat ;
+      font-family: "Montserrat";
+
 
     
 
@@ -179,7 +188,7 @@ video{
     color: #000;
     -webkit-text-stroke: 2px #ADDC2E ;
     /* font-family: gilroy; */
-    font-family: gilroy ;
+    font-family: "Gilroy";
 
     transition: all linear 0.4s;
     text-transform: uppercase;
@@ -240,7 +249,8 @@ video{
     font-size: 6vh;
     font-weight: 900;
     text-transform: uppercase;
-    font-family: monserrat ;
+      font-family: "Montserrat";
+
 
     
 }
@@ -248,7 +258,8 @@ video{
 #aboutus-in p{
     width: 80%;
     font-size: 3vh;
-    font-family: monserrat ;
+      font-family: "Montserrat";
+
 
 }
 
@@ -343,7 +354,8 @@ video{
     padding: 0 3vh;
     text-transform: uppercase;
     margin-bottom: 2.5vh;
-    font-family: monserrat ;
+      font-family: "Montserrat";
+
 
     /* margin-right: 40px; */
     /* white-space: nowrap; */
@@ -381,7 +393,8 @@ video{
     white-space: nowrap;
     color: #000000;
     font-weight: 900;
-    font-family: monserrat ;
+      font-family: "Montserrat";
+
 
     /* width: 50%; */
 
@@ -423,7 +436,8 @@ video{
     width: 60%;
     font-size: 4vh;
     text-align: center;
-    font-family: monserrat ;
+      font-family: "Montserrat";
+
 
 
 }
@@ -493,7 +507,8 @@ video{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: monserrat ;
+      font-family: "Montserrat";
+
 
 
 }
@@ -558,7 +573,8 @@ video{
     margin-top: 10px;
     cursor: pointer;
     transition: all ease 0.5s;
-    font-family: monserrat ;
+      font-family: "Montserrat";
+
 
 
 
@@ -576,7 +592,8 @@ video{
     text-transform: uppercase;
     font-size: 2.5vh;
     font-weight: 600;
-    font-family: monserrat ;
+      font-family: "Montserrat";
+
 
 }
 
