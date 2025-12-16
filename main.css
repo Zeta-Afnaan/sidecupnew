@@ -15,6 +15,17 @@ html,body{
     background: #ffffff;
     color: #ADDC2E;
 }
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(./Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+
+    src: url(./Montserrat-VariableFont_wght.ttf);
+}
 @font-face {
   font-family: "Gilroy";
   src: url("/fonts/Gilroy-Medium.ttf") format("truetype");
@@ -596,6 +607,7 @@ video{
 
 
 }
+
 
 
 
