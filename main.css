@@ -1,0 +1,585 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: montserrat;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /* perspective: 1000px; */
+
+}
+*::selection{
+    background: #ffffff;
+    color: #ADDC2E;
+}
+
+@font-face {
+    font-family:gilroy ;
+    src: url(./fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: monserrat ;
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+#nav{
+    height: 16vh;
+    width: 100%;
+    /* background: #c71616; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 8vw;
+    gap: 2vw;
+    position: fixed;
+    z-index: 99;
+} 
+
+#nav img {
+    height: 9vh;
+    cursor: pointer;
+    transition: all ease 0.5s;
+ }
+
+ #nav img:hover{
+    scale: 0.9;
+ }
+
+#nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: monserrat ;
+
+}
+
+#cursor{
+    height: 20px;
+    width: 20px;
+    background: #ADDC2E;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+
+#cursor-blur{
+    height: 400px;
+    width: 400px;
+    background: #aedc2e62;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(45px);
+    z-index: 9;
+
+}
+
+
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+#main{
+    background-color: rgba(0, 0, 0, 0.334);
+    position: relative;
+
+
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    /* background: #c30606; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#page1 h1{
+    font-size: 14vh;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 900;
+    z-index: 10;
+    font-family: monserrat ;
+
+
+    
+}
+
+#page1 h2{
+    font-size: 3.3vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 2vh;
+    font-family: monserrat ;
+
+}
+#page1 h1::before{
+    content: "Eat. Drink. Play.";
+    color: #000;
+    position: absolute;
+    bottom: 2.2%;
+    left: -.5%;
+    -webkit-text-stroke: 2px #ADDC2E;
+    z-index: -1;
+    font-family: monserrat ;
+
+}
+
+#page1 p{
+    width: 41%;
+    margin-top: 2vh;
+    font-size: 2.5vh;
+    font-family: monserrat ;
+
+    
+
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+    /* background: #000; */
+}
+
+#scroller{
+    height: 23vh;
+    width: 100%;
+    /* background: #e30707; */
+    white-space: nowrap;
+    gap: 20px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    position: relative;
+    z-index: 10;
+    
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+
+#scroller h4{
+    display: inline-block;
+    font-size: 140px;
+    font-weight: 800;
+    margin-right: 15px;
+    color: #000;
+    -webkit-text-stroke: 2px #ADDC2E ;
+    /* font-family: gilroy; */
+    font-family: gilroy ;
+
+    transition: all linear 0.4s;
+    text-transform: uppercase;
+}
+
+
+#scroller h4:hover{
+    color: #ADDC2E;
+}
+
+#scroller-in{
+    display: inline-block;
+    /* margin-right: 20px; */
+
+    animation-name: cursor;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+}
+
+#scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+
+}
+
+@keyframes cursor {
+    from{
+        transform: translateX(0);
+        
+    }
+
+    to{
+        transform: translateX(-100%);
+        
+    }
+}
+
+
+#aboutus{
+    display: flex;
+    margin-top: 20vh;
+    padding: 0 12vh;
+    position: relative;
+    z-index: 10;
+}
+
+#aboutus-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+#aboutus-in h3{
+    font-size: 6vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: monserrat ;
+
+    
+}
+
+#aboutus-in p{
+    width: 80%;
+    font-size: 3vh;
+    font-family: monserrat ;
+
+}
+
+
+#aboutus img{
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#moving-cards{
+    height: 88vh;
+    width: 100%;
+    /* background: #911b1b; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: right;
+    margin-top: 4vw;
+    z-index: 10;
+    gap: 60px;
+    overflow: hidden;
+
+}
+
+#card1{
+    height: 90%;
+    width: 25%;
+    position: relative;
+
+    /* background: #000; */
+    border-radius: 10px;
+    background: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+    /* overflow: hidden; */
+    background-position: center;
+    overflow: hidden;
+    z-index: 10;
+    background-size: cover;
+
+}
+
+#card2{
+    height: 90%;
+    width: 25%;
+    overflow: hidden;
+    /* background: #000; */
+    position: relative;
+    border-radius: 10px;
+    background: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+    background-position:center ;
+    background-size:cover ;
+    z-index: 10;
+
+}
+
+#card3{
+    height: 90%;
+    width: 25%;
+    overflow: hidden;
+    /* background: #000; */
+    border-radius: 10px;
+    position: relative;
+    background: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+    background-position: center;
+    background-size: cover;
+    z-index: 10; 
+
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #ADDC2E;
+    padding:30px;
+    padding-top: 8vw ;
+    border-radius: 10px;
+    transition: all ease 0.6s;
+
+    opacity: 0;
+
+    
+    
+}
+
+.overlay h4{
+    font-size: 2.5vw;
+    font-weight: 800;
+    color: #000;
+    padding: 0 3vh;
+    text-transform: uppercase;
+    margin-bottom: 2.5vh;
+    font-family: monserrat ;
+
+    /* margin-right: 40px; */
+    /* white-space: nowrap; */
+}
+
+.overlay p{
+    font-size: 2.8vh;
+    color: #000;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.card:hover{
+    transform:rotate3d(-1,1,0,20deg) ;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+#box{
+    min-height: 35vh;
+    background: linear-gradient(to right top, #ADDC2E 30%,#25A435);
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    gap: 10vw;
+    z-index: 10;
+    overflow: hidden;
+}
+#box h3{
+    font-size: 4vh;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #000000;
+    font-weight: 900;
+    font-family: monserrat ;
+
+    /* width: 50%; */
+
+}
+#box img{
+    height:35vh;
+    width: 30%;
+    object-fit: cover;
+}
+
+#img1{
+    rotate: 180deg;
+}
+
+
+#Page3{
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    z-index: 10;
+
+}
+
+#container{
+    height: 80vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+#container img{
+    height:6vh ;
+    /* position: absolute; */
+}
+
+#container h4{
+    width: 60%;
+    font-size: 4vh;
+    text-align: center;
+    font-family: monserrat ;
+
+
+}
+
+#colon1{
+    position: absolute;
+    top: 15%;
+    left: 14%;
+}
+
+#colon2{
+    position: absolute;
+    bottom: 15%;
+    right: 13%;
+}
+
+#page4{
+    height: 45vh;
+    width: 100%;
+    /* background: #9f4242; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+    z-index: 10;
+
+}
+
+#page4 h3{
+    position: absolute;
+    font-size: 9vh;
+    top: -4%;
+    text-transform: uppercase;
+    color: #000;
+    -webkit-text-stroke: 2px #ffffff ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all linear 0.4s;
+
+
+}
+
+#page4 h3:hover{
+    color: #ADDC2E;
+    -webkit-text-stroke: 1px #ADDC2E ;
+    
+}
+
+.elem{
+    height: 25vh;
+    width: 28%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.elem h4{
+    height: 100%;
+    width: 100%;
+    font-size: 4vh;
+    background: #ADDC2E;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #000;
+    transition: all ease 0.5s;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monserrat ;
+
+
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+    scale: 1.2;
+}
+
+.elem:hover h4{
+    color: #ffffff;
+    background: transparent;
+    
+}
+
+.elem:hover img{
+    scale: 1;
+}
+
+#footer{
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(to top right, #ADDC2E 40%, #25A435);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    gap: 2vh;
+    position: relative;
+}
+
+#footer .elem{
+
+    height: 30vh;
+    width: 25%;
+    left: 10%;
+    /* padding-left: 9vh; */
+    /* background: #7d3535; */
+    
+}
+
+#footer img{
+    height: 10vh;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+#footer img:hover{
+    scale: 0.9;
+}
+
+#footer h3{
+    color: #000;
+    font-size: 3vh;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    font-family: monserrat ;
+
+
+
+}
+
+#footer h3:hover{
+    color: #ffffff;
+}
+
+#f2,#f3,#f4{
+    margin-left: 4vh;
+}
+#footer h5{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 2.5vh;
+    font-weight: 600;
+    font-family: monserrat ;
+
+}
+
+
+
+
