@@ -18,13 +18,13 @@ html,body{
 
 @font-face {
     font-family: "Gilroy";
-    src: url(./Gilroy-Medium.ttf);
+    src: url(./Gilroy-Medium.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat";
 
-    src: url(./Montserrat-VariableFont_wght.ttf);
+    src: url(./Montserrat-VariableFont_wght.ttf) format("truetype");
 }
 @font-face {
   font-family: "Gilroy";
@@ -607,6 +607,7 @@ video{
 
 
 }
+
 
 
 
