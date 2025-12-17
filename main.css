@@ -105,6 +105,7 @@ video{
 #main{
     background-color: rgba(0, 0, 0, 0.334);
     position: relative;
+    overflow:hodden;
 
 
 }
@@ -607,6 +608,7 @@ video{
 
 
 }
+
 
 
 
